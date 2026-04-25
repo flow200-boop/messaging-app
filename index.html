@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Premium Messaging</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">N</div>
+                    <h1>Nexus</h1>
+                </div>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search conversations...">
+            </div>
+
+            <nav class="conversations">
+                <div class="section-title">Recent Chats</div>
+                <div class="conversation-list" id="conversationList">
+                    <div class="conversation-item active">
+                        <div class="avatar">G</div>
+                        <div class="convo-info">
+                            <div class="convo-name">Global Chat</div>
+                            <div class="convo-preview">Welcome to Nexus!</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="user-profile">
+                <div class="avatar" id="userAvatar">U</div>
+                <div class="user-info">
+                    <div class="user-name" id="userNameDisplay">Anonymous</div>
+                    <div class="user-status">Online</div>
+                </div>
+                <button class="settings-btn" title="Settings"><i class="fas fa-cog"></i></button>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="chat-info">
+                    <h2 id="currentChatName">Global Chat</h2>
+                    <span class="status-indicator">● 42 online</span>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn"><i class="fas fa-phone"></i></button>
+                    <button class="action-btn"><i class="fas fa-video"></i></button>
+                    <button class="action-btn"><i class="fas fa-info-circle"></i></button>
+                </div>
+            </header>
+
+            <div class="messages-container" id="messagesContainer">
+                <div class="system-message">This is the beginning of your chat history.</div>
+                <!-- Messages will be injected here -->
+            </div>
+
+            <footer class="chat-input-area">
+                <button class="attach-btn"><i class="fas fa-plus"></i></button>
+                <div class="input-wrapper">
+                    <input type="text" id="messageInput" placeholder="Type a message...">
+                    <button class="emoji-btn">😊</button>
+                </div>
+                <button class="send-btn" id="sendBtn">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    </svg>
+                </button>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to Nexus</h2>
+            <p>Enter your name to start chatting</p>
+            <input type="text" id="usernameInput" placeholder="Your Name">
+            <button id="loginBtn">Join Chat</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
