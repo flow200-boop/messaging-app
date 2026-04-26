@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus | Premium Messaging</title>
+    <title>NEXUS | NOTHING STYLE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -16,13 +16,13 @@
         <aside class="sidebar">
             <div class="sidebar-header">
                 <div class="logo">
-                    <div class="logo-icon">N</div>
+                    <div class="logo-icon"></div>
                     <h1>Nexus</h1>
                 </div>
             </div>
             
             <div class="search-bar">
-                <input type="text" placeholder="Search conversations...">
+                <input type="text" placeholder="Search...">
             </div>
 
             <nav class="conversations">
@@ -31,15 +31,15 @@
                     <div class="conversation-item active">
                         <div class="avatar">G</div>
                         <div class="convo-info">
-                            <div class="convo-name">Global Lounge</div>
-                            <div class="convo-preview">Active now</div>
+                            <div class="convo-name">Global</div>
+                            <div class="convo-preview">Live</div>
                         </div>
                     </div>
                     <div class="conversation-item">
                         <div class="avatar">D</div>
                         <div class="convo-info">
-                            <div class="convo-name">Design Sync</div>
-                            <div class="convo-preview">3 new messages</div>
+                            <div class="convo-name">Design</div>
+                            <div class="convo-preview">3 New</div>
                         </div>
                     </div>
                 </div>
@@ -49,9 +49,9 @@
                 <div class="avatar" id="userAvatar">U</div>
                 <div class="user-info">
                     <div class="user-name" id="userNameDisplay">Anonymous</div>
-                    <div class="user-status">Active Now</div>
+                    <div class="user-status">Online</div>
                 </div>
-                <button class="settings-btn" title="Settings"><i class="fa-solid fa-gear"></i></button>
+                <button class="settings-btn" title="Settings"><i class="fa-solid fa-ellipsis"></i></button>
             </div>
         </aside>
 
@@ -59,30 +59,28 @@
         <main class="chat-area">
             <header class="chat-header">
                 <div class="chat-info">
-                    <h2 id="currentChatName">Global Lounge</h2>
-                    <span class="status-indicator">42 members online</span>
+                    <h2 id="currentChatName">Global</h2>
+                    <span class="status-indicator">42 Members</span>
                 </div>
                 <div class="chat-actions">
-                    <button class="action-btn" title="Start Call"><i class="fa-solid fa-phone"></i></button>
-                    <button class="action-btn" title="Video Chat"><i class="fa-solid fa-video"></i></button>
-                    <button class="action-btn" title="Info"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="action-btn"><i class="fa-solid fa-phone"></i></button>
+                    <button class="action-btn"><i class="fa-solid fa-video"></i></button>
+                    <button class="action-btn"><i class="fa-solid fa-info"></i></button>
                 </div>
             </header>
 
             <div class="messages-container" id="messagesContainer">
-                <div class="system-message">This is the start of the Global Lounge. Be kind.</div>
+                <div class="system-message">Beginning of stream.</div>
             </div>
 
             <footer class="chat-input-area">
-                <button class="attach-btn" title="Attach Files"><i class="fa-solid fa-plus"></i></button>
+                <button class="attach-btn"><i class="fa-solid fa-plus"></i></button>
                 <div class="input-wrapper">
-                    <input type="text" id="messageInput" placeholder="Message Global Lounge...">
-                    <button class="emoji-btn">😊</button>
+                    <input type="text" id="messageInput" placeholder="Message...">
+                    <button class="emoji-btn"><i class="fa-regular fa-face-smile"></i></button>
                 </div>
-                <button class="send-btn" id="sendBtn" title="Send Message">
-                    <svg viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
-                    </svg>
+                <button class="send-btn" id="sendBtn">
+                    <i class="fa-solid fa-arrow-up"></i>
                 </button>
             </footer>
         </main>
@@ -91,11 +89,11 @@
     <!-- Modals -->
     <div id="loginModal" class="modal">
         <div class="modal-content">
-            <div class="logo-icon" style="margin: 0 auto 24px; width: 64px; height: 64px; font-size: 2rem; border-radius: 20px;">N</div>
-            <h2>Join the Conversation</h2>
-            <p>Nexus is a premium real-time messaging space. Enter your name to enter the lounge.</p>
-            <input type="text" id="usernameInput" placeholder="Your display name">
-            <button id="loginBtn">Enter Nexus</button>
+            <div class="logo-icon"></div>
+            <h2>Nexus</h2>
+            <p>Enter to begin</p>
+            <input type="text" id="usernameInput" placeholder="Name">
+            <button id="loginBtn">Start</button>
         </div>
     </div>
 
