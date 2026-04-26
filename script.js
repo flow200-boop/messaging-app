@@ -122,6 +122,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Channel Switching Logic
+    const conversationItems = document.querySelectorAll('.conversation-item');
+    const currentChatName = document.getElementById('currentChatName');
+    const messageInputPlaceholder = document.getElementById('messageInput');
+
+    conversationItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Update UI
+            conversationItems.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            
+            const name = item.querySelector('.convo-name').textContent;
+            currentChatName.textContent = name;
+            messageInputPlaceholder.placeholder = `Message ${name}...`;
+            
+            // Clear messages (or load history in a real app)
+            messagesContainer.innerHTML = `<div class="system-message">This is the start of the ${name}. Be kind.</div>`;
+            
+            // In a real app, you'd switch the BroadcastChannel or filter messages
+        });
+    });
+
     // Welcome Message
     setTimeout(() => {
         if (!messagesContainer.querySelector('.message')) {
